@@ -88,6 +88,10 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+
+var passwordCharacters = "",
+var passwordLength;
+
 // Function to prompt user for password options
 function getPasswordOptions() {
 

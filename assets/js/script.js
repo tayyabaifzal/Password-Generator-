@@ -88,12 +88,23 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+var passwordChoices = {
+  length: 0,
+  specialCharacters: "",
+  numericCharacters: "",
+  lowerCasedCharacters: "",
+  upperCasedCharacters: "",
 
-var passwordCharacters = "",
-var passwordLength;
+};
+
+
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  function getPasswordOptions() {
+    while (!passwordChoices.length){
+      passwordChoices.length = parseInt(prompt("How many characters would you like your password to be? Enter a valid number between 8 and 128."));
+  
 
 }
 

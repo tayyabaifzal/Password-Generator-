@@ -160,6 +160,7 @@ function generatePassword() {
     finalChar += getRandom(lowerCasedCharacters);
     
   }
+  
 
   for (var i=0; i <passwordChoices.length; i++){
     var randomChar = getRandom(randomChar);
@@ -167,6 +168,11 @@ function generatePassword() {
   }
 
 
+  for (var i=0; i < finalChar.length; i++){
+    result[i] = finalChar[i];
+  }
+
+  return result.join('');
 }
 
 // Get references to the #generate element

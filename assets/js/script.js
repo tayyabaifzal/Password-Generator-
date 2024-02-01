@@ -161,6 +161,10 @@ function generatePassword() {
     
   }
 
+  for (var i=0; i <passwordChoices.length; i++){
+    var randomChar = getRandom(randomChar);
+    result.push(randomChar);
+  }
 
 
 }

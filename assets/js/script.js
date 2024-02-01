@@ -128,10 +128,14 @@ function getRandom(arr) {
 
 }
 
-}
 
 // Function to generate password with user input
 function generatePassword() {
+  getPasswordOptions();
+  var result = [];
+  var randomChar = [];
+  var finalChar = [];
+
 
 }
 

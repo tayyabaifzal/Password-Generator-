@@ -136,6 +136,32 @@ function generatePassword() {
   var randomChar = [];
   var finalChar = [];
 
+  
+  if (passwordChoices.specialCharacters) {
+    randomChar += getRandom(specialCharacters);
+    finalChar += getRandom(specialCharacters);
+
+  }
+
+  if (passwordChoices.numericCharacters) {
+    randomChar += getRandom(numericCharacters);
+    finalChar += getRandom(numericCharacters);
+    
+  }
+
+  if (passwordChoices.upperCasedCharacters) {
+    randomChar += getRandom(upperCasedCharacters);
+    finalChar += getRandom(upperCasedCharacters);
+    
+  }
+
+  if (passwordChoices.lowerCasedCharacters) {
+    randomChar += getRandom(lowerCasedCharacters);
+    finalChar += getRandom(lowerCasedCharacters);
+    
+  }
+
+
 
 }
 

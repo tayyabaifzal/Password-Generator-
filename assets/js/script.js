@@ -105,7 +105,12 @@ function getPasswordOptions() {
     while (!passwordChoices.length){
       passwordChoices.length = parseInt(prompt("How many characters would you like your password to be? Enter a valid number between 8 and 128."));
   
-
+      if(isNaN(passwordChoices.length) || passwordChoices.length < 8 || passwordChoices.length > 128) {
+        alert("Please enter a valid number between 8 and 128.");
+        passwordChoices.length = 0;
+      }
+    }
+  
 }
 
 // Function for getting a random element from an array

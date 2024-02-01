@@ -101,11 +101,11 @@ var passwordChoices = {
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  function getPasswordOptions() {
-    while (!passwordChoices.length){
+
+    while (!passwordChoices.length) {
       passwordChoices.length = parseInt(prompt("How many characters would you like your password to be? Enter a valid number between 8 and 128."));
-  
-      if(isNaN(passwordChoices.length) || passwordChoices.length < 8 || passwordChoices.length > 128) {
+
+      if (isNaN(passwordChoices.length) || passwordChoices.length < 8 || passwordChoices.length > 128) {
         alert("Please enter a valid number between 8 and 128.");
         passwordChoices.length = 0;
       }
@@ -115,10 +115,9 @@ function getPasswordOptions() {
     passwordChoices.numericCharacters = confirm("Click OK to include neumeric characters");
     passwordChoices.lowerCasedCharacters = confirm("Click OK to include lower cased characters");
     passwordChoices.upperCasedCharacters = confirm("Click OK to include upper cased characters");
-  
+
   }
-    
-}
+
 
 // Function for getting a random element from an array
 function getRandom(arr) {
@@ -136,7 +135,7 @@ function generatePassword() {
   var randomChar = [];
   var finalChar = [];
 
-  
+
   if (passwordChoices.specialCharacters) {
     randomChar += getRandom(specialCharacters);
     finalChar += getRandom(specialCharacters);
@@ -146,29 +145,29 @@ function generatePassword() {
   if (passwordChoices.numericCharacters) {
     randomChar += getRandom(numericCharacters);
     finalChar += getRandom(numericCharacters);
-    
+
   }
 
   if (passwordChoices.upperCasedCharacters) {
     randomChar += getRandom(upperCasedCharacters);
     finalChar += getRandom(upperCasedCharacters);
-    
+
   }
 
   if (passwordChoices.lowerCasedCharacters) {
     randomChar += getRandom(lowerCasedCharacters);
     finalChar += getRandom(lowerCasedCharacters);
-    
-  }
-  
 
-  for (var i=0; i <passwordChoices.length; i++){
+  }
+
+
+  for (var i = 0; i < passwordChoices.length; i++) {
     var randomChar = getRandom(randomChar);
     result.push(randomChar);
   }
 
 
-  for (var i=0; i < finalChar.length; i++){
+  for (var i = 0; i < finalChar.length; i++) {
     result[i] = finalChar[i];
   }
 

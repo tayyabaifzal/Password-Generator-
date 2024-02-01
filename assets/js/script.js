@@ -110,7 +110,14 @@ function getPasswordOptions() {
         passwordChoices.length = 0;
       }
     }
+
+    passwordChoices.specialCharacters = confirm("Click OK to include special characters");
+    passwordChoices.numericCharacters = confirm("Click OK to include neumeric characters");
+    passwordChoices.lowerCasedCharacters = confirm("Click OK to include lower cased characters");
+    passwordChoices.upperCasedCharacters = confirm("Click OK to include upper cased characters");
   
+  }
+    
 }
 
 // Function for getting a random element from an array

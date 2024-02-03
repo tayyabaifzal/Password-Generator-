@@ -6,7 +6,8 @@ We all Find it difficult to choose a secure password. This app will help you cho
 ## Installation:
 This app requires no installation. Open the link on your device whenever you need to choose a strong, secure password. The demo to use the app is shown in the video below.
 
-![Alt text](/assets/images/demo.mp4)
+[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)]
+
 
 Once you choose the options, the password will be showed in the box. Copy the password and use it to sign up in your favourite app. 
 

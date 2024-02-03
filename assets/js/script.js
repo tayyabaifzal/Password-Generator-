@@ -112,9 +112,9 @@ function getPasswordOptions() {
     }
 
     passwordChoices.specialCharacters = confirm("Click OK to include special characters");
-    passwordChoices.numericCharacters = confirm("Click OK to include neumeric characters");
-    passwordChoices.lowerCasedCharacters = confirm("Click OK to include lower cased characters");
-    passwordChoices.upperCasedCharacters = confirm("Click OK to include upper cased characters");
+    passwordChoices.numericCharacters = confirm("Click OK to include numeric characters");
+    passwordChoices.lowerCasedCharacters = confirm("Click OK to include lowercased characters");
+    passwordChoices.upperCasedCharacters = confirm("Click OK to include upperscased characters");
 
   }
 
@@ -130,7 +130,7 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-  getPasswordOptions();
+  getPasswordOptions();s
   var result = [];
   var randomChar = [];
   var finalChar = [];

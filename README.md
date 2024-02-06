@@ -14,7 +14,7 @@ The demo to use the app is shown in the below.
 ## Links:
 The link to the deployed app is below:
 
-<!-- //////////////////// -->
+https://tayyabaifzal.github.io/Password-Generator-/ 
 
 
 You can access the code via github repo link below:
